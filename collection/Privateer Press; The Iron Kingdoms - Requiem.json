@@ -10,7 +10,7 @@
 					"Privateer Press"
 				],
 				"convertedBy": [
-					"Breno Baiardi"
+					"Baiardi"
 				],
 				"color": "f87805"
 			}
@@ -30,7 +30,7 @@
 					]
 				}
 			},
-			"source": "IronKingdoms-Requiem",
+			"source": "IronKingdoms-Reqiuem",
 			"alignment": [
 				"U"
 			],
@@ -1535,6 +1535,343 @@
 					"entries": [
 						"You know two cantrips of your choice from the sorcerer spell list. Charisma is your spellcasting ability for them."
 					]
+				}
+			]
+		}
+	],
+	"background": [
+		{
+			"name": "Explorer",
+			"source": "IronKingdoms-Requiem",
+			"page": 129,
+			"skillProficiencies": [
+				{
+					"nature": true,
+					"perception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"toolProficiencies": [
+				{
+					"cartographer's tools": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"cartographer's tools|phb",
+						"traveler's clothes|phb",
+						{
+							"special": "scroll case containing maps in progress"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Nature}, {@skill Perception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Cartographer's tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Two of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "{@item Cartographer's tools|PHB}, a set of {@item traveler's clothes|PHB}, a scroll case containing maps in progress, and a {@item pouch|PHB} containing 15 gp"
+						}
+					]
+				},
+				"You've charted paths through the inhospitable jungles of Alchiere and the trackless wastes of the frozen north to fill in the blank areas on the map. You are more at home in a freshly unsealed Orgoth tomb than in the bustling streets of a major city. You've been lost more times than you can count but have always found your way back to civilization.",
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Intelligence or Wisdom score increases by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Patron",
+					"entries": [
+						"You receive a stipend from a university, a wealthy individual, or another organization each month as long as you continue to explore new regions, report back regularly, and bring your patron the occasional gift from an exotic place. The amount of this stipend is {@dice 1d10} gp per character level. At the GM's discretion, your benefactor can give you heftier sums for noteworthy accomplishments.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I crave the excitement of being the first to enter a long-forgotten place."
+								],
+								[
+									"2",
+									"I can quote any of Professor Pendrake's essays; in fact, I do so whenever I get the chance."
+								],
+								[
+									"3",
+									"Studying at a prestigious university has prepared me for life on the road."
+								],
+								[
+									"4",
+									"I believe knowledge is for everyone, and I work to make sure all my discoveries end up in museums, where others can benefit from them."
+								],
+								[
+									"5",
+									"I love learning new languages and can sit with a book of lore for hours."
+								],
+								[
+									"6",
+									"I've spent so much time in the wilderness that I forget myself in polite company."
+								],
+								[
+									"7",
+									"Despite wise counsel, if it involves a tomb, the Orgoth, or a curse on all who enter, I'm going in."
+								],
+								[
+									"8",
+									"Campfires are the perfect stage, and I love telling stories"
+								]
+							]
+						}
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			]
+		},
+		{
+			"name": "Order of Wizardry",
+			"source": "IronKingdoms-Requiem",
+			"page": 129,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"investigation": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"steamjacks": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "Proof of your membership in the Order of Wizardry"
+						},
+						"robes|phb",
+						"staff|phb",
+						"common clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Investigation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Steamjacks"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice."
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "Proof of your membership in the Order of Wizardry, {@item robes|PHB},  a {@item staff|PHB}, a set of {@item common clothes|PHB}, and a {@item pouch|PHB} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background:",
+					"entries": [
+						"Widely known and respected as an institution for training those of arcane aptitude, the Order of Wizardry has been home to you and many other mages eager to progress along the established ranks of their craft, learn the secrets of wielding and controlling spells, and apply those skills to the benefit of their nations and the world at large."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Intelligence or Charisma score increases by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Order Lodge",
+					"entries": [
+						"The Order maintains public lodges in most of the major cities in Cygnar and Ord and recently began reestablishing its facilities in Llael. It also maintains secret facilities in other nations' population centers, but these are available to members only with specific permission. At the GM's discretion, you can contact one of these locations and request reasonable aid if you are in good standing with the organization."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Magus Training",
+					"entries": []
+				},
+				{
+					"type": "entries",
+					"name": "Prerequisite:",
+					"entries": [
+						"Spellcasting, Warcaster Magic, or Pact",
+						"{@action Magic|XPHB} class Feature",
+						"Add the spells on the Magus Training Spells table to the spell list for your spellcasting class. (If you are a multiclass character with multiple spell lists, add these spells to all of them.)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aditional Spells:",
+					"entries": []
+				},
+				{
+					"type": "entries",
+					"name": "Level Spell",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"Cantrip mage hand",
+								"1st detect magic",
+								"2nd magic weapon",
+								"3rd {@spell dispel magic}",
+								"4th arcane eye",
+								"5th scrying"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Investigator",
+			"source": "IronKingdoms-Requiem",
+			"page": 132,
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"investigation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"forensics kit": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"magnifying glass|phb",
+						"hooded lantern|phb",
+						{
+							"item": "flask|phb",
+							"displayName": "flask of oil"
+						},
+						"tinderbox|phb",
+						{
+							"special": "small journal"
+						},
+						"common clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Insight}, {@skill Investigation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Forensics kit"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A {@item magnifying glass|PHB}, a {@item hooded lantern|PHB}, a {@item flask|PHB} of oil, a {@item tinderbox|PHB}, a small journal, a set of {@item common clothes|PHB}, and a {@item pouch|PHB} containing 10 gp"
+						}
+					]
+				},
+				"You are a skilled detective adept in the techniques of deduction, criminology, and interrogation. In the past, you may have been a watch inspector who used your abilities to catch criminals and keep your city safe, a former inquisitor, or a member of a military intelligence-gathering organization who ferreted out the secrets of your nation's enemies, both foreign and domestic.",
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Intelligence or Wisdom score increases by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Astute",
+					"entries": [
+						"Your keen mind and sharp eyes miss very little. Throughout all your years of solving crimes, these qualities have always kept you one step ahead of the criminals you pursue. You can gain advantage when you make an {@skill Insight} (Wisdom), {@skill Investigation} (Intelligence), or {@skill Perception} (Wisdom) check, but you can't use this feature again until you finish a long rest"
+					],
+					"data": {
+						"isFeature": true
+					}
 				}
 			]
 		}
