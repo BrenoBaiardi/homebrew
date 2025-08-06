@@ -413,19 +413,13 @@
 			]
 		},
 		{
-			"name": "Human (Cygnar)",
+			"name": "Human",
 			"source": "IronKingdoms-Requiem",
-			"page": 61,
+			"page": 58,
 			"size": [
 				"M"
 			],
 			"speed": 30,
-			"ability": [
-				{
-					"int": 1,
-					"cha": 1
-				}
-			],
 			"traitTags": [
 				"Skill Proficiency"
 			],
@@ -445,233 +439,231 @@
 				},
 				{
 					"type": "entries",
-					"name": "Right to Bear Arms",
+					"name": "National Origin",
 					"entries": [
-						"Cygnar's firearms are among the best in the Iron Kingdoms, and its citizens are very familiar with their operation. You gain +1 to attack rolls made with simple and martial firearms."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Well Educated",
-					"entries": [
-						"You have proficiency in two of the following skills: {@skill Arcana}, {@skill Insight}, {@skill Medicine}, {@skill Nature}, and {@skill Religion}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Industrial Revolution",
-					"entries": [
-						"When you make an ability check using {@item artisan's tools|PHB}, you may roll a {@dice d4} and add the number rolled to the ability check"
+						"Choose the nation your character is from: Cygnar, the Protectorate of Menoth, Khador, Llael, Ord, or Cryx. After choosing a nation, you can use the standard traits for humans, or you can use the traits listed for your character's nation below."
 					]
 				}
-			]
-		},
-		{
-			"name": "Human (Menite)",
-			"source": "IronKingdoms-Requiem",
-			"page": 62,
-			"size": [
-				"M"
 			],
-			"speed": 30,
-			"ability": [
+			"subraces": [
 				{
-					"str": 1,
-					"con": 1
-				}
-			],
-			"traitTags": [
-				"Armor Proficiency",
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"other": true,
-					"anyStandard": 2
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Languages",
+					"name": "Cygnar",
+					"source": "IronKingdoms-Requiem",
+					"page": 61,
+					"overwrite": {
+						"ability": true
+					},
+					"ability": [
+						{
+							"int": 1,
+							"cha": 1
+						}
+					],
 					"entries": [
-						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
+						{
+							"type": "entries",
+							"name": "Right to Bear Arms",
+							"entries": [
+								"Cygnar's firearms are among the best in the Iron Kingdoms, and its citizens are very familiar with their operation. You gain +1 to attack rolls made with simple and martial firearms."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Well Educated",
+							"entries": [
+								"You have proficiency in two of the following skills: {@skill Arcana}, {@skill Insight}, {@skill Medicine}, {@skill Nature}, and {@skill Religion}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Industrial Revolution",
+							"entries": [
+								"When you make an ability check using {@item artisan's tools|PHB}, you may roll a {@dice d4} and add the number rolled to the ability check"
+							]
+						}
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Pilgrim's Path",
+					"name": "Protectorate of Menoth",
+					"source": "IronKingdoms-Requiem",
+					"page": 62,
+					"overwrite": {
+						"ability": true
+					},
+					"ability": [
+						{
+							"str": 1,
+							"con": 1
+						}
+					],
 					"entries": [
-						"You have proficiency in the {@skill History}, {@skill Religion}, and {@skill Survival} skills."
+						{
+							"type": "entries",
+							"name": "Pilgrim's Path",
+							"entries": [
+								"You have proficiency in the {@skill History}, {@skill Religion}, and {@skill Survival} skills."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Citizen Soldiers",
+							"entries": [
+								"You have proficiency with simple melee weapons, martial melee weapons, light armor, medium armor, and shields"
+							]
+						}
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Citizen Soldiers",
+					"name": "Khador",
+					"source": "IronKingdoms-Requiem",
+					"page": 63,
+					"overwrite": {
+						"ability": true
+					},
+					"ability": [
+						{
+							"wis": 1,
+							"con": 1
+						}
+					],
 					"entries": [
-						"You have proficiency with simple melee weapons, martial melee weapons, light armor, medium armor, and shields"
-					]
-				}
-			]
-		},
-		{
-			"name": "Human (Khador)",
-			"source": "IronKingdoms-Requiem",
-			"page": 63,
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"con": 1,
-					"wis": 1
-				}
-			],
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"other": true,
-					"anyStandard": 2
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
+						{
+							"type": "entries",
+							"name": "Legacy of the North",
+							"entries": [
+								"You have proficiency in two of the following skills: {@skill Animal Handling}, {@skill Athletics}, {@skill Intimidation}, and {@skill Survival}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Iron Will",
+							"entries": [
+								"You have advantage on saving throws against being {@condition frightened}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Northern Resilience",
+							"entries": [
+								"You gain a +2 bonus to Constitution checks and Constitution saving throws."
+							]
+						}
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Legacy of the North",
+					"name": "Llael",
+					"source": "IronKingdoms-Requiem",
+					"page": 64,
+					"overwrite": {
+						"ability": true
+					},
+					"ability": [
+						{
+							"int": 1,
+							"cha": 1
+						}
+					],
 					"entries": [
-						"You have proficiency in two of the following skills: {@skill Animal Handling}, {@skill Athletics}, {@skill Intimidation}, and {@skill Survival}."
+						{
+							"type": "entries",
+							"name": "Keen Mind",
+							"entries": [
+								"You have proficiency in two of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Perception}, and {@skill Stealth}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Blood of Liberty",
+							"entries": [
+								"The people of Llael are accustomed to living under a repressive regime. Members of the Llaelese Resistance have taught their people not only to work underground, but also whom they can (and cannot) trust. When you make an Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}) check, you may roll a {@dice d4} and add the number rolled to the ability check."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dueling Code",
+							"entries": [
+								"You have proficiency with one martial weapon of your choice."
+							]
+						}
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Iron Will",
+					"name": "Ord",
+					"source": "IronKingdoms-Requiem",
+					"page": 64,
+					"overwrite": {
+						"ability": true
+					},
+					"ability": [
+						{
+							"str": 1,
+							"dex": 1
+						}
+					],
 					"entries": [
-						"You have advantage on saving throws against being {@condition frightened}."
+						{
+							"type": "entries",
+							"name": "Shore Leave",
+							"entries": [
+								"You have proficiency in two of the following skills: {@skill Acrobatics}, {@skill Athletics}, {@skill Performance}, and {@skill Survival}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sea Legs",
+							"entries": [
+								"You have a swimming speed of 30 feet. You can't use your swimming speed while wearing medium or heavy armor."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Coastal Home",
+							"entries": [
+								"You have proficiency with your choice of one waterborne vehicle and one set of the following tools: {@item carpenter's tools|PHB}, {@item cartographer's tools|PHB}, or {@item cook's utensils|PHB}."
+							]
+						}
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Northern Resilience",
+					"name": "Cryx",
+					"source": "IronKingdoms-Requiem",
+					"page": 65,
+					"overwrite": {
+						"ability": true,
+						"resist": true
+					},
+					"ability": [
+						{
+							"wis": 1,
+							"dex": 1
+						}
+					],
+					"resist": [
+						"acid",
+						"necrotic"
+					],
 					"entries": [
-						"You gain a +2 bonus to Constitution checks and Constitution saving throws."
-					]
-				}
-			]
-		},
-		{
-			"name": "Human (Llael)",
-			"source": "IronKingdoms-Requiem",
-			"page": 64,
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"int": 1,
-					"cha": 1
-				}
-			],
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"other": true,
-					"anyStandard": 2
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Keen Mind",
-					"entries": [
-						"You have proficiency in two of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Perception}, and {@skill Stealth}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Blood of Liberty",
-					"entries": [
-						"The people of Llael are accustomed to living under a repressive regime. Members of the Llaelese Resistance have taught their people not only to work underground, but also whom they can (and cannot) trust. When you make an Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}) check, you may roll a {@dice d4} and add the number rolled to the ability check."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Dueling Code",
-					"entries": [
-						"You have proficiency with one martial weapon of your choice."
-					]
-				}
-			]
-		},
-		{
-			"name": "Human (Ord)",
-			"source": "IronKingdoms-Requiem",
-			"page": 64,
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"ability": [
-				{
-					"str": 1,
-					"dex": 1
-				}
-			],
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"other": true,
-					"anyStandard": 2
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Shore Leave",
-					"entries": [
-						"You have proficiency in two of the following skills: {@skill Acrobatics}, {@skill Athletics}, {@skill Performance}, and {@skill Survival}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Sea Legs",
-					"entries": [
-						"You have a swimming speed of 30 feet. You can't use your swimming speed while wearing medium or heavy armor."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Coastal Home",
-					"entries": [
-						"You have proficiency with your choice of one waterborne vehicle and one set of the following tools: {@item carpenter's tools|PHB}, {@item cartographer's tools|PHB}, or {@item cook's utensils|PHB}."
+						{
+							"type": "entries",
+							"name": "Smuggler's Heritage",
+							"entries": [
+								"You have proficiency in two of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Perception}, and {@skill Stealth}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "A Pirate's Life",
+							"entries": [
+								"You are proficient with the cutlass and simple pistols."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Touch of Blight",
+							"entries": [
+								"You have advantage on saving throws against poison and disease, and you have resistance to acid damage and necrotic damage."
+							]
+						}
 					]
 				}
 			]
