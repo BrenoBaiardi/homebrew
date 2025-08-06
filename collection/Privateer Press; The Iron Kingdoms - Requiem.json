@@ -1134,7 +1134,115 @@
 					"other": true
 				}
 			],
-			"raceName": "Trollkin",
+			"subraces": [
+				{
+					"name": "Woodland",
+					"source": "IronKingdoms-Requiem",
+					"page": 73,
+					"overwrite": {
+						"ability": true
+					},
+					"ability": [
+						{
+							"str": 1,
+							"con": 2
+						}
+					],
+					"traitTags": [
+						"Skill Proficiency"
+					],
+					"languageProficiencies": [
+						{
+							"other": true
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Ability Score Increase",
+							"entries": [
+								"Your Constitution score increases by 1."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Woodland Survivalist",
+							"entries": [
+								"Nonmagical {@quickref difficult terrain||3} within forests doesn't slow your travel. Additionally, you have advantage on {@skill Survival} (Wisdom) checks to hunt wild game within forests."
+							]
+						}
+					]
+				},
+				{
+					"name": "Albino",
+					"source": "IronKingdoms-Requiem",
+					"page": 73,
+					"size": [
+						"M"
+					],
+					"overwrite": {
+						"ability": true
+					},
+					"ability": [
+						{
+							"str": 1,
+							"con": 1,
+							"cha": 1
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Ability Score Increase",
+							"entries": [
+								"Your Charisma score increases by 1."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Cantrip",
+							"entries": [
+								"You know two cantrips of your choice from the sorcerer spell list. Charisma is your spellcasting ability for them."
+							]
+						}
+					]
+				},
+				{
+					"name": "Northkin",
+					"source": "IronKingdoms-Requiem",
+					"page": 73,
+					"overwrite": {
+						"ability": true,
+						"resist": true
+					},
+					"ability": [
+						{
+							"str": 2,
+							"con": 1
+						}
+					],
+					"resist": [
+						"poison",
+						"cold"
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Ability Score Increase",
+							"entries": [
+								"Your Strength score increases by 1."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Northkin Resilience",
+							"entries": [
+								"Accustomed to the harsh winters of your homeland, you are naturally adapted to cold climates and have resistance to cold damage."
+							]
+						}
+					]
+				}
+			],
 			"resist": [
 				"poison"
 			],
@@ -1200,340 +1308,6 @@
 					"name": "Subrace",
 					"entries": [
 						"Over generations, trollkin tribes will physically adapt to their surroundings in conspicuous ways. Albino trollkin appear throughout all tribes, their skin signifying innate arcane power. The three most common subraces of trollkin are woodland trollkin, Northkin trollkin, and albino trollkin. Choose one of these subraces"
-					]
-				}
-			]
-		},
-		{
-			"name": "Trollkin (Woodland)",
-			"source": "IronKingdoms-Requiem",
-			"page": 73,
-			"ability": [
-				{
-					"str": 1,
-					"con": 2
-				}
-			],
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"darkvision": 60,
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"other": true
-				}
-			],
-			"resist": [
-				"poison"
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Ability Score Increase",
-					"entries": [
-						"Your Strength and Constitution scores each increase by 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Trollkin mature at the same rate as humans but live nearly twice as long—about 150 years, on average."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Alignment",
-					"entries": [
-						"Most trollkin are lawful, and much of modern trollkin culture and society are organized in accordance with their ancient traditions. Trollkin often tend to be goodnatured but can become ruthless and ferocious when their people are threatened."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Born to Be Wild",
-					"entries": [
-						"You have proficiency in the {@skill Survival} skill."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Ceaseless Stamina",
-					"entries": [
-						"Trollkin do not tire easily and can undertake long marches or perform grueling physical labor for far longer than most races. You ignore the effects of {@condition exhaustion} until you have suffered 3 or more levels of {@condition exhaustion}. When you finish a long rest, your {@condition exhaustion} level is reduced by 3 instead of 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"Accustomed to life in the wilds and surviving in the dark of night, you have superior vision in dark and dim conditions. You can see in {@quickref Vision and Light||2||dim light} within 60 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of grey."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Regenerative",
-					"entries": [
-						"Trollkin heal at a much faster rate than other races, especially when feasting and resting. When you roll a 1 or 2 when spending a Hit Die to regain hit points at the end of a short rest, you can reroll the die but must use the new roll, even if it is a 1 or 2."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Trollkin Toughness",
-					"entries": [
-						"You have advantage on saving throws against poison and disease, and you have resistance to poison damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write the common language of your native kingdom (Cygnaran, Khadoran, etc.). Additionally, you speak the Molgur-Trul dialect, a tribal language that has no written form."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Ability Score Increase",
-					"entries": [
-						"Your Constitution score increases by 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Woodland Survivalist",
-					"entries": [
-						"Nonmagical {@quickref difficult terrain||3} within forests doesn't slow your travel. Additionally, you have advantage on {@skill Survival} (Wisdom) checks to hunt wild game within forests."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
-					]
-				}
-			]
-		},
-		{
-			"name": "Trollkin (Northkin)",
-			"source": "IronKingdoms-Requiem",
-			"page": 73,
-			"ability": [
-				{
-					"str": 2,
-					"con": 1
-				}
-			],
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"darkvision": 60,
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"other": true
-				}
-			],
-			"resist": [
-				"poison",
-				"cold"
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Ability Score Increase",
-					"entries": [
-						"Your Strength and Constitution scores each increase by 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Trollkin mature at the same rate as humans but live nearly twice as long—about 150 years, on average."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Alignment",
-					"entries": [
-						"Most trollkin are lawful, and much of modern trollkin culture and society are organized in accordance with their ancient traditions. Trollkin often tend to be goodnatured but can become ruthless and ferocious when their people are threatened."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Born to Be Wild",
-					"entries": [
-						"You have proficiency in the {@skill Survival} skill."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Ceaseless Stamina",
-					"entries": [
-						"Trollkin do not tire easily and can undertake long marches or perform grueling physical labor for far longer than most races. You ignore the effects of {@condition exhaustion} until you have suffered 3 or more levels of {@condition exhaustion}. When you finish a long rest, your {@condition exhaustion} level is reduced by 3 instead of 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"Accustomed to life in the wilds and surviving in the dark of night, you have superior vision in dark and dim conditions. You can see in {@quickref Vision and Light||2||dim light} within 60 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of grey."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Regenerative",
-					"entries": [
-						"Trollkin heal at a much faster rate than other races, especially when feasting and resting. When you roll a 1 or 2 when spending a Hit Die to regain hit points at the end of a short rest, you can reroll the die but must use the new roll, even if it is a 1 or 2."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Trollkin Toughness",
-					"entries": [
-						"You have advantage on saving throws against poison and disease, and you have resistance to poison damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write the common language of your native kingdom (Cygnaran, Khadoran, etc.). Additionally, you speak the Molgur-Trul dialect, a tribal language that has no written form."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Ability Score Increase",
-					"entries": [
-						"Your Strength score increases by 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Northkin Resilience",
-					"entries": [
-						"Accustomed to the harsh winters of your homeland, you are naturally adapted to cold climates and have resistance to cold damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
-					]
-				}
-			]
-		},
-		{
-			"name": "Trollkin (Albino)",
-			"source": "IronKingdoms-Requiem",
-			"page": 73,
-			"size": [
-				"M"
-			],
-			"ability": [
-				{
-					"str": 1,
-					"con": 1,
-					"cha": 1
-				}
-			],
-			"speed": 30,
-			"darkvision": 60,
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"other": true
-				}
-			],
-			"resist": [
-				"poison"
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Ability Score Increase",
-					"entries": [
-						"Your Strength and Constitution scores each increase by 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Trollkin mature at the same rate as humans but live nearly twice as long—about 150 years, on average."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Alignment",
-					"entries": [
-						"Most trollkin are lawful, and much of modern trollkin culture and society are organized in accordance with their ancient traditions. Trollkin often tend to be goodnatured but can become ruthless and ferocious when their people are threatened."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Born to Be Wild",
-					"entries": [
-						"You have proficiency in the {@skill Survival} skill."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Ceaseless Stamina",
-					"entries": [
-						"Trollkin do not tire easily and can undertake long marches or perform grueling physical labor for far longer than most races. You ignore the effects of {@condition exhaustion} until you have suffered 3 or more levels of {@condition exhaustion}. When you finish a long rest, your {@condition exhaustion} level is reduced by 3 instead of 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"Accustomed to life in the wilds and surviving in the dark of night, you have superior vision in dark and dim conditions. You can see in {@quickref Vision and Light||2||dim light} within 60 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of grey."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Regenerative",
-					"entries": [
-						"Trollkin heal at a much faster rate than other races, especially when feasting and resting. When you roll a 1 or 2 when spending a Hit Die to regain hit points at the end of a short rest, you can reroll the die but must use the new roll, even if it is a 1 or 2."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Trollkin Toughness",
-					"entries": [
-						"You have advantage on saving throws against poison and disease, and you have resistance to poison damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write the common language of your native kingdom (Cygnaran, Khadoran, etc.). Additionally, you speak the Molgur-Trul dialect, a tribal language that has no written form."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Ability Score Increase",
-					"entries": [
-						"Your Charisma score increases by 1."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Cantrip",
-					"entries": [
-						"You know two cantrips of your choice from the sorcerer spell list. Charisma is your spellcasting ability for them."
 					]
 				}
 			]
