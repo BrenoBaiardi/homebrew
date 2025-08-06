@@ -1,0 +1,1542 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "IronKingdoms-Requiem",
+				"abbreviation": "IKR",
+				"full": "Iron Kingdoms - Requiem",
+				"version": "5.1",
+				"authors": [
+					"Privateer Press"
+				],
+				"convertedBy": [
+					"Breno Baiardi"
+				],
+				"color": "f87805"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Justicer Laborjack",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": [
+						"construct",
+						"Steamjack"
+					]
+				}
+			},
+			"source": "IronKingdoms-Reqiuem",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "8d10 + 40",
+				"average": 4
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 20,
+			"int": 5,
+			"wis": 10,
+			"cha": 1,
+			"passive": 10,
+			"shortName": true,
+			"page": 239,
+			"cr": "6",
+			"languages": [
+				"Manufacturer language"
+			],
+			"save": {
+				"str": "+8",
+				"con": "+8"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing",
+				{
+					"resist": [],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Cortex",
+					"entries": [
+						"The Justicer’s cortex allows it to understand basic commands from its controller (spoken verbally by most but usually communicated telepathically by warcasters). Verbal commands must be akin to those issued to a trained animal, such as “stay,” “guard,” “attack,” and so on. The Justicer will carry out these commands with no regard for its own safety."
+					]
+				},
+				{
+					"name": "Heavy Metal",
+					"entries": [
+						"The Justicer’s attacks are magical for the purpose of overcoming resistances and immunity to nonmagical attacks for steamjacks, colossals, and warbeasts."
+					]
+				},
+				{
+					"name": "Steam Power",
+					"entries": [
+						"The Justicer requires coal and water to function. When not in combat, it can function for 5 hours with a full fuel load of 600 pounds of coal and fresh water in its boiler. While in combat, the Justicer can function for 1 hour with a full fuel load. If the Justicer’s coal and water are not refilled at the end of this time, it suffers one level of {@condition exhaustion} at the end of each minute. Due to the amount of noise its steam engine produces, the Justicer has disadvantage on Dexterity (Stealth) checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Combat Truncheon",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}26 ({@damage 3d10 + 10}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Net Launcher",
+					"entries": [
+						"The Justicer fires a weighted net at a point within 30 feet that it can see. The net covers a 10-foot-by-10-foot area centered on the point. Any creature fully within this area must succeed on a {@dc 15} Dexterity saving throw or be {@condition restrained}. A creature can use its action to make a {@dc 10} Strength check to free itself or another creature in the net. Dealing 5 slashing damage to the net (AC 10) also frees a creature without harming it, ending the effect. After using this action, the Justicer can’t use it again until the net has been retrieved and repacked into the launcher."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RNG"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"uniqueId": "41b11825-e1e5-4e9c-8aad-b2440bdcf926"
+		},
+		{
+			"name": "City Watch Inspector",
+			"source": "IronKingdoms-Requiem",
+			"page": 239,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item breastplate|XPHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 14,
+			"int": 15,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"insight": "+5",
+				"investigation": "+5",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"any one language"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Hold the Line",
+					"entries": [
+						"The inspector gains a +1 bonus to AC while standing within 5 feet of a city watch ally."
+					]
+				},
+				{
+					"name": "Eye for Detail",
+					"entries": [
+						"The inspector has an appraising eye that allows it to strike at a target's most vulnerable points. The inspector adds its Intelligence modifier to damage rolls when it hits (included in the attack)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The inspector makes two melee attacks."
+					]
+				},
+				{
+					"name": "Sword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Hand Cannon",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/240 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"uniqueId": "565c17d7-b0db-43a9-88c4-6f7732db3648"
+		},
+		{
+			"name": "Man-O-War",
+			"source": "IronKingdoms-Requiem",
+			"page": 247,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"heavy steam armor",
+						"shield cannon"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"athletics": "+6",
+				"survival": "+3"
+			},
+			"passive": 10,
+			"languages": [
+				"any one language (usually Khadoran)"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Man-O-War",
+					"entries": [
+						"The Man-O-War's heavy steam armor provides it with a damage threshold of 5. Attacks that deal less than this amount of damage do not damage the Man-O-War. The armor requires a load of 20 pounds of coal and 8 gallons of water for 5 hours of general use or 1 hour of combat. If the armor does not have power, the Man-O-War's base speed becomes 0."
+					]
+				},
+				{
+					"name": "Northern Resilience",
+					"entries": [
+						"The Man-O-War gains a +2 bonus to Constitution checks and Constitution saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Man-O-War makes two melee attacks: one with its annihilator blade and one with its shield bash."
+					]
+				},
+				{
+					"name": "Annihilator Blade",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d10 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Cannon Shield",
+					"entries": [
+						"{@atk rw} {@hit 1} to hit, range 10/30 ft., one target. {@h}3 ({@damage 1d10 - 2}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
+		}
+	],
+	"race": [
+		{
+			"name": "Gobber",
+			"source": "IronKingdoms-Requiem",
+			"page": 58,
+			"size": [
+				"S"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"dex": 2,
+					"cha": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"gobberish": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Gobbers age more rapidly than many other races, reaching maturity in their early teens. On average, gobbers live 65 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Gobbers tend toward neutral alignments."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beneath Notice",
+					"entries": [
+						"Gobbers are often overlooked due to their small size and ability to pass unnoticed. You are proficient in the {@skill Stealth} skill. Additionally, when you perform the {@action Disengage|XPHB} action, after moving you can attempt to perform the {@action Hide|XPHB} action to remain hidden from any creature you have concealment against."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superior Darkvision",
+					"entries": [
+						"You can see in {@quickref Vision and Light||2||dim light} within 120 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nimbleness",
+					"entries": [
+						"You can move through the space of any creature whose size is larger than yours."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tinkerer",
+					"entries": [
+						"You have proficiency with one set of {@item artisan's tools|PHB} of your choice: {@item alchemist's supplies|PHB}, {@item mason's tools|PHB}, {@item smith's tools|PHB}, or {@item tinker's tools|PHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak Gobberish, which has no written form, and you can speak, read, and write one other language of your choice, usually the language of your birth kingdom."
+					]
+				}
+			]
+		},
+		{
+			"name": "Human (Cygnar)",
+			"source": "IronKingdoms-Requiem",
+			"page": 61,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"int": 1,
+					"cha": 1
+				}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true,
+					"anyStandard": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Right to Bear Arms",
+					"entries": [
+						"Cygnar's firearms are among the best in the Iron Kingdoms, and its citizens are very familiar with their operation. You gain +1 to attack rolls made with simple and martial firearms."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Well Educated",
+					"entries": [
+						"You have proficiency in two of the following skills: {@skill Arcana}, {@skill Insight}, {@skill Medicine}, {@skill Nature}, and {@skill Religion}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Industrial Revolution",
+					"entries": [
+						"When you make an ability check using {@item artisan's tools|PHB}, you may roll a {@dice d4} and add the number rolled to the ability check"
+					]
+				}
+			]
+		},
+		{
+			"name": "Human (Menite)",
+			"source": "IronKingdoms-Requiem",
+			"page": 62,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 1,
+					"con": 1
+				}
+			],
+			"traitTags": [
+				"Armor Proficiency",
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true,
+					"anyStandard": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pilgrim's Path",
+					"entries": [
+						"You have proficiency in the {@skill History}, {@skill Religion}, and {@skill Survival} skills."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Citizen Soldiers",
+					"entries": [
+						"You have proficiency with simple melee weapons, martial melee weapons, light armor, medium armor, and shields"
+					]
+				}
+			]
+		},
+		{
+			"name": "Human (Khador)",
+			"source": "IronKingdoms-Requiem",
+			"page": 63,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"con": 1,
+					"wis": 1
+				}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true,
+					"anyStandard": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Legacy of the North",
+					"entries": [
+						"You have proficiency in two of the following skills: {@skill Animal Handling}, {@skill Athletics}, {@skill Intimidation}, and {@skill Survival}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Iron Will",
+					"entries": [
+						"You have advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Northern Resilience",
+					"entries": [
+						"You gain a +2 bonus to Constitution checks and Constitution saving throws."
+					]
+				}
+			]
+		},
+		{
+			"name": "Human (Llael)",
+			"source": "IronKingdoms-Requiem",
+			"page": 64,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"int": 1,
+					"cha": 1
+				}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true,
+					"anyStandard": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Mind",
+					"entries": [
+						"You have proficiency in two of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Perception}, and {@skill Stealth}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blood of Liberty",
+					"entries": [
+						"The people of Llael are accustomed to living under a repressive regime. Members of the Llaelese Resistance have taught their people not only to work underground, but also whom they can (and cannot) trust. When you make an Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}) check, you may roll a {@dice d4} and add the number rolled to the ability check."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dueling Code",
+					"entries": [
+						"You have proficiency with one martial weapon of your choice."
+					]
+				}
+			]
+		},
+		{
+			"name": "Human (Ord)",
+			"source": "IronKingdoms-Requiem",
+			"page": 64,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 1,
+					"dex": 1
+				}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true,
+					"anyStandard": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shore Leave",
+					"entries": [
+						"You have proficiency in two of the following skills: {@skill Acrobatics}, {@skill Athletics}, {@skill Performance}, and {@skill Survival}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sea Legs",
+					"entries": [
+						"You have a swimming speed of 30 feet. You can't use your swimming speed while wearing medium or heavy armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Coastal Home",
+					"entries": [
+						"You have proficiency with your choice of one waterborne vehicle and one set of the following tools: {@item carpenter's tools|PHB}, {@item cartographer's tools|PHB}, or {@item cook's utensils|PHB}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Human (Cryx)",
+			"source": "IronKingdoms-Requiem",
+			"page": 65,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"dex": 1,
+					"wis": 1
+				}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true,
+					"anyStandard": 2
+				}
+			],
+			"resist": [
+				"acid",
+				"necrotic"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"All human characters can speak the language of their home nation, but reading and writing are not entirely widespread. As the primary trade tongue used by merchants and travelers throughout the Iron Kingdoms, Cygnaran is by far the most widely spoken language in western Immoren, but anyone who has common dealings with citizens of other nations will typically learn the languages of peoples they deal with. You can speak, read, and write two languages of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Smuggler's Heritage",
+					"entries": [
+						"You have proficiency in two of the following skills: {@skill Deception}, {@skill Intimidation}, {@skill Perception}, and {@skill Stealth}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "A Pirate's Life",
+					"entries": [
+						"You are proficient with the cutlass and simple pistols."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Touch of Blight",
+					"entries": [
+						"You have advantage on saving throws against poison and disease, and you have resistance to acid damage and necrotic damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Iosan",
+			"source": "IronKingdoms-Requiem",
+			"page": 67,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"int": 2,
+					"cha": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"Shyr": true,
+					"anyStandard": 1
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Although they reach maturity at nearly the same age as humans, Iosans live far longer. Many live to be over 200 years old, with some living up to three centuries."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Iosans do not tend toward a particular alignment. While some uphold the common good and the rule of law, others seek personal gain over the wellbeing of others."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to the gloomy forests of Ios, you have superior vision in dark and dim conditions. You can see in {@quickref Vision and Light||2||dim light} within 60 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Martial Society",
+					"entries": [
+						"When you make an attack roll and roll a 1, you can reroll the die but must use the new roll, even if it is another 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skill Versatility",
+					"entries": [
+						"The long lifespan of Iosans gives them the opportunity to master many skills and crafts. You have proficiency with any combination of two other skills or tools of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Shyr and one other language you have picked up in your travels."
+					]
+				}
+			]
+		},
+		{
+			"name": "Nyss",
+			"source": "IronKingdoms-Requiem",
+			"page": 68,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"dex": 2,
+					"int": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"Shyr": true,
+					"anyStandard": 1
+				}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"resist": [
+				"cold"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Nyss are among the longest-lived peoples in western Immoren. They reach maturity in their early twenties and can live for over 400 years, barring violence or disease."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Nyss tend toward chaotic and neutral alignments."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Child of Winter",
+					"entries": [
+						"Accustomed to the frozen mountains of your homeland, you have resistance to cold damage and are naturally adapted to cold climates."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nyss Weapon Training",
+					"entries": [
+						"You are proficient with the Nyss longbow and Nyss claymore."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Quick Response",
+					"entries": [
+						"You can use your canny nature to respond quickly to a threat. When you roll initiative, you may do so with advantage. You can't use this feature again until you complete a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Light Resilience",
+					"entries": [
+						"Accustomed to the glare of sunlight off of snow, you have advantage on saving throws against being {@condition blinded}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Shyr and one other language you have picked up in your travels."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ogrun",
+			"source": "IronKingdoms-Requiem",
+			"page": 69,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 2,
+					"con": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"Molgur-Og": true,
+					"anyStandard": 1
+				}
+			],
+			"traitTags": [
+				"Natural Armor",
+				"Powerful Build",
+				"Skill Proficiency"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Ogrun reach maturity in their midteens, but they do not live as long as other races and seldom live past 75 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Ogrun tend toward lawful alignments. When an ogrun swears an oath to a leader or cause, breaking that oath is all but unthinkable."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Huge Stature",
+					"entries": [
+						"Your large size allows you to wield twohanded weapons in one hand. When you use a weapon with Versatile, you always use the damage value in parentheses that appears with the property."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Imposing Presence",
+					"entries": [
+						"You have proficiency in one skill of your choice: {@skill Intimidation} or {@skill Persuasion}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Thick-Skinned",
+					"entries": [
+						"Ogrun are hardy and blessed with naturally tough hide. You have a +1 bonus to AC when not wearing heavy armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak the Molgur-Og dialect and can speak, read, and write one other language. This language is usually the common tongue of your home kingdom."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dwarf (Rhul)",
+			"source": "IronKingdoms-Requiem",
+			"page": 71,
+			"size": [
+				"M"
+			],
+			"speed": 25,
+			"ability": [
+				{
+					"con": 2,
+					"str": 2
+				}
+			],
+			"age": {
+				"mature": 20,
+				"max": 350
+			},
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"smith's tools",
+							"brewer's supplies",
+							"mason's tools"
+						]
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"battleaxe|phb": true,
+					"handaxe|phb": true,
+					"light hammer|phb": true,
+					"warhammer|phb": true
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/dwarf.mp3"
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Your speed is not reduced by wearing heavy armor."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"You have advantage on saving throws against poison, and you have resistance against poison damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Combat Training",
+					"entries": [
+						"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Tool Proficiency",
+					"entries": [
+						"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Stonecunning",
+					"entries": [
+						"Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Oathbound",
+					"entries": [
+						"Rhulfolk of lawful alignment (the vast majority) take their oaths seriously and have been conditioned over millennia to obey them. A formal oath taken by a Rhulfolk dwarf cannot intentionally be broken in any way, nor do Rhulfolk look for loopholes to do so. When performing a task directly related to a sworn oath, you receive a +1 bonus on all skill checks.",
+						"{@note You may have one sworn oath at 1st level, a second at 7th level, and a third at 12th level. Oaths must be incredibly specific and long-lasting tasks that will take most of your life to complete. Good examples include “I swear to protect the children of my fallen comrade,” “I will never allow anyone to steal from the poor,” and “I will see the ancestral treasures of Clan Wroughthammer destroyed.” Bad examples include “I will always win a fight,” “I will kill all my enemies,” and “I will always persuade others.”}"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Firearms Training",
+					"entries": [
+						"You have proficiency with carbines."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Master Craftsman",
+					"entries": [
+						" You have proficiency with tinker’s tools. You can craft magic items in 50 gp increments instead of the normal 25 gp increments, and you can craft mundane items in 15 gp increments instead of the normal 5 gp increments."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Trollkin",
+			"source": "IronKingdoms-Requiem",
+			"page": 73,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 1,
+					"con": 1
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true
+				}
+			],
+			"raceName": "Trollkin",
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Trollkin mature at the same rate as humans but live nearly twice as long—about 150 years, on average."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Most trollkin are lawful, and much of modern trollkin culture and society are organized in accordance with their ancient traditions. Trollkin often tend to be goodnatured but can become ruthless and ferocious when their people are threatened."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Born to Be Wild",
+					"entries": [
+						"You have proficiency in the {@skill Survival} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ceaseless Stamina",
+					"entries": [
+						"Trollkin do not tire easily and can undertake long marches or perform grueling physical labor for far longer than most races. You ignore the effects of {@condition exhaustion} until you have suffered 3 or more levels of {@condition exhaustion}. When you finish a long rest, your {@condition exhaustion} level is reduced by 3 instead of 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life in the wilds and surviving in the dark of night, you have superior vision in dark and dim conditions. You can see in {@quickref Vision and Light||2||dim light} within 60 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of grey."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Regenerative",
+					"entries": [
+						"Trollkin heal at a much faster rate than other races, especially when feasting and resting. When you roll a 1 or 2 when spending a Hit Die to regain hit points at the end of a short rest, you can reroll the die but must use the new roll, even if it is a 1 or 2."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trollkin Toughness",
+					"entries": [
+						"You have advantage on saving throws against poison and disease, and you have resistance to poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write the common language of your native kingdom (Cygnaran, Khadoran, etc.). Additionally, you speak the Molgur-Trul dialect, a tribal language that has no written form."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Subrace",
+					"entries": [
+						"Over generations, trollkin tribes will physically adapt to their surroundings in conspicuous ways. Albino trollkin appear throughout all tribes, their skin signifying innate arcane power. The three most common subraces of trollkin are woodland trollkin, Northkin trollkin, and albino trollkin. Choose one of these subraces"
+					]
+				}
+			]
+		},
+		{
+			"name": "Trollkin (Woodland)",
+			"source": "IronKingdoms-Requiem",
+			"page": 73,
+			"ability": [
+				{
+					"str": 1,
+					"con": 2
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Strength and Constitution scores each increase by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Trollkin mature at the same rate as humans but live nearly twice as long—about 150 years, on average."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Most trollkin are lawful, and much of modern trollkin culture and society are organized in accordance with their ancient traditions. Trollkin often tend to be goodnatured but can become ruthless and ferocious when their people are threatened."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Born to Be Wild",
+					"entries": [
+						"You have proficiency in the {@skill Survival} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ceaseless Stamina",
+					"entries": [
+						"Trollkin do not tire easily and can undertake long marches or perform grueling physical labor for far longer than most races. You ignore the effects of {@condition exhaustion} until you have suffered 3 or more levels of {@condition exhaustion}. When you finish a long rest, your {@condition exhaustion} level is reduced by 3 instead of 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life in the wilds and surviving in the dark of night, you have superior vision in dark and dim conditions. You can see in {@quickref Vision and Light||2||dim light} within 60 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of grey."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Regenerative",
+					"entries": [
+						"Trollkin heal at a much faster rate than other races, especially when feasting and resting. When you roll a 1 or 2 when spending a Hit Die to regain hit points at the end of a short rest, you can reroll the die but must use the new roll, even if it is a 1 or 2."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trollkin Toughness",
+					"entries": [
+						"You have advantage on saving throws against poison and disease, and you have resistance to poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write the common language of your native kingdom (Cygnaran, Khadoran, etc.). Additionally, you speak the Molgur-Trul dialect, a tribal language that has no written form."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Constitution score increases by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Woodland Survivalist",
+					"entries": [
+						"Nonmagical {@quickref difficult terrain||3} within forests doesn't slow your travel. Additionally, you have advantage on {@skill Survival} (Wisdom) checks to hunt wild game within forests."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				}
+			]
+		},
+		{
+			"name": "Trollkin (Northkin)",
+			"source": "IronKingdoms-Requiem",
+			"page": 73,
+			"ability": [
+				{
+					"str": 2,
+					"con": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true
+				}
+			],
+			"resist": [
+				"poison",
+				"cold"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Strength and Constitution scores each increase by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Trollkin mature at the same rate as humans but live nearly twice as long—about 150 years, on average."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Most trollkin are lawful, and much of modern trollkin culture and society are organized in accordance with their ancient traditions. Trollkin often tend to be goodnatured but can become ruthless and ferocious when their people are threatened."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Born to Be Wild",
+					"entries": [
+						"You have proficiency in the {@skill Survival} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ceaseless Stamina",
+					"entries": [
+						"Trollkin do not tire easily and can undertake long marches or perform grueling physical labor for far longer than most races. You ignore the effects of {@condition exhaustion} until you have suffered 3 or more levels of {@condition exhaustion}. When you finish a long rest, your {@condition exhaustion} level is reduced by 3 instead of 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life in the wilds and surviving in the dark of night, you have superior vision in dark and dim conditions. You can see in {@quickref Vision and Light||2||dim light} within 60 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of grey."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Regenerative",
+					"entries": [
+						"Trollkin heal at a much faster rate than other races, especially when feasting and resting. When you roll a 1 or 2 when spending a Hit Die to regain hit points at the end of a short rest, you can reroll the die but must use the new roll, even if it is a 1 or 2."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trollkin Toughness",
+					"entries": [
+						"You have advantage on saving throws against poison and disease, and you have resistance to poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write the common language of your native kingdom (Cygnaran, Khadoran, etc.). Additionally, you speak the Molgur-Trul dialect, a tribal language that has no written form."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Strength score increases by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Northkin Resilience",
+					"entries": [
+						"Accustomed to the harsh winters of your homeland, you are naturally adapted to cold climates and have resistance to cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				}
+			]
+		},
+		{
+			"name": "Trollkin (Albino)",
+			"source": "IronKingdoms-Requiem",
+			"page": 73,
+			"size": [
+				"M"
+			],
+			"ability": [
+				{
+					"str": 1,
+					"con": 1,
+					"cha": 1
+				}
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"other": true
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Strength and Constitution scores each increase by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Trollkin mature at the same rate as humans but live nearly twice as long—about 150 years, on average."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Most trollkin are lawful, and much of modern trollkin culture and society are organized in accordance with their ancient traditions. Trollkin often tend to be goodnatured but can become ruthless and ferocious when their people are threatened."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Born to Be Wild",
+					"entries": [
+						"You have proficiency in the {@skill Survival} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ceaseless Stamina",
+					"entries": [
+						"Trollkin do not tire easily and can undertake long marches or perform grueling physical labor for far longer than most races. You ignore the effects of {@condition exhaustion} until you have suffered 3 or more levels of {@condition exhaustion}. When you finish a long rest, your {@condition exhaustion} level is reduced by 3 instead of 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life in the wilds and surviving in the dark of night, you have superior vision in dark and dim conditions. You can see in {@quickref Vision and Light||2||dim light} within 60 feet of you as if it were {@quickref Vision and Light||2||bright light} and in darkness as if it were {@quickref Vision and Light||2||dim light}. You can't discern color in darkness, only shades of grey."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Regenerative",
+					"entries": [
+						"Trollkin heal at a much faster rate than other races, especially when feasting and resting. When you roll a 1 or 2 when spending a Hit Die to regain hit points at the end of a short rest, you can reroll the die but must use the new roll, even if it is a 1 or 2."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trollkin Toughness",
+					"entries": [
+						"You have advantage on saving throws against poison and disease, and you have resistance to poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write the common language of your native kingdom (Cygnaran, Khadoran, etc.). Additionally, you speak the Molgur-Trul dialect, a tribal language that has no written form."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ability Score Increase",
+					"entries": [
+						"Your Charisma score increases by 1."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cantrip",
+					"entries": [
+						"You know two cantrips of your choice from the sorcerer spell list. Charisma is your spellcasting ability for them."
+					]
+				}
+			]
+		}
+	]
+}
