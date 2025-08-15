@@ -30,7 +30,7 @@
 					]
 				}
 			},
-			"source": "IronKingdoms-Requiem",
+			"source": "IronKingdoms-Reqiuem",
 			"alignment": [
 				"U"
 			],
@@ -1639,33 +1639,6 @@
 						"isFeature": true
 					}
 				}
-			]
-		}
-	],
-	"subclass": [
-		{
-			"name": "Fell Caller",
-			"source": "IronKingdoms-Requiem",
-			"className": "Bard",
-			"classSource": "PHB",
-			"shortName": "Fell Caller",
-			"subclassFeatures": [
-				"Fell Call|Bard|PHB|Fell Caller|IronKingdoms-Requiem|3>|IronKingdoms-Requiem"
-			]
-		}
-	],
-	"subclassFeature": [
-		{
-			"name": "Fell Call",
-			"source": "IronKingdoms-Requiem",
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Fell Caller",
-			"subclassSource": "IronKingdoms-Requiem",
-			"level": 3,
-			"entries": [
-				"At 3rd level, you learn how to perform various fell calls, bellowing shouts that can cause your enemies to tremble in fear or instill your allies with unnatural confidence. You can use a bonus action to begin a fell call, or you can begin a fell call when you use Bardic Inspiration. You can maintain a fell call for up to 1 minute but must use either a bonus action or Bardic Inspiration each round to do so.",
-				"Performing a fell call does not prevent you from speaking other words or from casting spells with verbal components; you simply shout them as part of your fell call. If you are unable to speak at any time while maintaining a fell call, the fell call ends immediately. You can begin a fell call a number of times equal to your Constitution modifier (a minimum of once). You regain any expended uses when you finish a long rest. When you begin a"
 			]
 		}
 	]
